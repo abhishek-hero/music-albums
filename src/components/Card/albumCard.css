@@ -1,0 +1,19 @@
+.card-main-div {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    background: white;
+    border-radius: 3px;
+    background: linear-gradient(to right, #240b36, #c31432);
+    text-align: center;
+}
+
+.card-main-div h3 {
+    color: whitesmoke;
+    margin-top: 10px;
+}
+
+.card-sub-div {
+    margin-top: 30px;
+    color: whitesmoke;
+}

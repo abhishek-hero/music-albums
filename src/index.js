@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/bootstrap/dist/js/bootstrap.min.js'
+import { BrowserRouter } from "react-router-dom";
+import { UserContextProvider } from './contexts/UserContext'
+import { AlbumContextProvider } from './contexts/AlbumContext'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AlbumContextProvider>
+    <UserContextProvider>
+      <BrowserRouter>
+        <React.StrictMode>
+          <App />
+        </React.StrictMode>
+      </BrowserRouter>
+    </UserContextProvider>
+  </AlbumContextProvider>,
   document.getElementById('root')
 );
 

@@ -1,0 +1,39 @@
+.main-div-album {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+    margin-top: 50px;
+
+}
+
+.pagination-div {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.pagination-div-button {
+    height: 30px;
+    border: none;
+    background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    margin: 0 15px;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.pagination-inner-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 28px;
+    border: 1px solid black;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}

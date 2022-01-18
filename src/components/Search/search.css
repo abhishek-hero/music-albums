@@ -1,0 +1,9 @@
+.search-main-div {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.marginLR {
+    margin: 0 15px;
+}
