@@ -5,15 +5,24 @@ import { Link } from "react-router-dom";
 export const Navbar = ({ pagination }) => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
+      <nav className="navbar navbar-expand-lg navbar-light">
+        <div className="container-fluid">
           <Link to="/" style={{ textDecoration: "none" }}>
-            <a class="navbar-brand" href="#">
-              Musica
-            </a>
+            <p className="navbar-brand" style={{ fontFamily: "cursive" }}>
+              <span
+                style={{
+                  fontWeight: "bolder",
+                  fontFamily: "cursive",
+                  color: "orange",
+                }}
+              >
+                X
+              </span>
+              Music
+            </p>
           </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNavAltMarkup"
@@ -21,19 +30,19 @@ export const Navbar = ({ pagination }) => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
+          <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div className="navbar-nav">
               <Link to="/" style={{ textDecoration: "none" }}>
-                <a class="nav-link active" aria-current="page" href="#">
+                <p className="nav-link active" aria-current="page">
                   Home
-                </a>
+                </p>
               </Link>
               <Link to="/artist" style={{ textDecoration: "none" }}>
-                <a class="nav-link active" aria-current="page" href="#">
+                <p className="nav-link active" aria-current="page">
                   Artist
-                </a>
+                </p>
               </Link>
             </div>
           </div>

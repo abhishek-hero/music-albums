@@ -1,9 +1,23 @@
 .search-main-div {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100px;
 }
 
 .marginLR {
     margin: 0 15px;
+}
+
+.searchResult-div {
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 30px;
+    /* background: wheat; */
+    border-radius: 15px;
+    color: black;
+    font-weight: bolder;
+    font-family: cursive;
 }
